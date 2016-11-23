@@ -12,7 +12,7 @@
     "build": "ng build && cp -R src/public dist/public",
     "prepare": "cp -a electron/. dist",
     "electron": "npm run prepare && electron dist",
-    "package": "npm run build && npm run prepare && ./node_modules/electron-packager/cli.js dist App --platform=darwin --arch=all --out=dist-app --overwrite"
+    "package": "npm run build && npm run prepare && ./node_modules/electron-packager/cli.js dist App --platform=win32 --arch=all --out=dist-app --overwrite"
   },
   "private": true,
   "dependencies": {
